@@ -1,0 +1,117 @@
+/* Основний контейнер профілю */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Фото профілю */
+  .profile-photo {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  /* Текст профілю */
+  .profile-text {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Контактна інформація */
+  .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #FF5722;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Навички (слайдери) */
+  .skill-slider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-label {
+    font-size: 14px;
+    font-weight: bold;
+    flex-basis: 100px;
+  }
+  
+  .skill-bar-container {
+    background: #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+    height: 8px;
+    position: relative;
+  }
+  
+  .skill-bar {
+    background: #FF5722;
+    height: 100%;
+    border-radius: 5px;
+    width: 70%;
+  }
+  
+  /* Таблиці */
+  .table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 14px;
+  }
+  
+  .table-custom th, .table-custom td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .table-custom thead {
+    background-color: #FF5722;
+    color: #fff;
+  }
+  
+  .table-custom tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Мови */
+  .language-button {
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+    display: inline-block;
+    background: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  /* Хобі */
+  .hobby-item {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fafafa;
+  }
+  
+  /* Блоки посилань */
+  .reference-box {
+    background: #f3f3f3;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+  }
+  
