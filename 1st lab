@@ -1,0 +1,52 @@
+import gulp from 'gulp';
+import * as sass from 'sass'; // Імпортуємо SASS
+import gulpSass from 'gulp-sass'; // Імпортуємо gulp-sass
+import browserSync from 'browser-sync';
+import imagemin from 'gulp-imagemin';
+
+const sassCompiler = gulpSass(sass); // Ініціалізація SASS
+
+// Таск для CSS
+gulp.task('css', function () {
+    return gulp.src('app/css/**/*.css') // Вказуємо шлях до CSS файлів
+        .pipe(sassCompiler().on('error', sassCompiler.logError))
+        .pipe(gulp.dest('dist/css/style.scss')) // Вказуємо, куди компілювати CSS
+        .pipe(browserSync.stream());
+});
+
+// Таск для HTML
+gulp.task('html', function () {
+    return gulp.src('app/**/*.html') // Вказуємо шлях до HTML файлів
+        .pipe(gulp.dest('dist')) // Вказуємо куди копіювати HTML
+        .pipe(browserSync.stream());
+});
+
+// Таск для JS
+gulp.task('js', function () {
+    return gulp.src('app/js/**/*.js') // Вказуємо шлях до JS файлів
+        .pipe(gulp.dest('dist/js')) // Вказуємо куди копіювати JS
+        .pipe(browserSync.stream());
+});
+
+// Таск для зображень
+gulp.task('images', function () {
+    return gulp.src('app/images/**/*', { encoding: false }) // Вказуємо шлях до зображень
+        .pipe(imagemin()) // Використовуємо imagemin
+        .pipe(gulp.dest('dist/images')); // Вказуємо куди копіювати зображення
+});
+
+// Таск для сервера
+gulp.task('serve', function () {
+    browserSync.init({
+        server: {
+            baseDir: 'dist' // Вказуємо базову директорію
+        }
+    });
+    gulp.watch('app/css/**/*.css', gulp.series('css')); // Слідкуємо за CSS
+    gulp.watch('app/**/*.html', gulp.series('html')); // Слідкуємо за HTML
+    gulp.watch('app/js/**/*.js', gulp.series('js')); // Слідкуємо за JS
+    gulp.watch('dist/**/*').on('change', browserSync.reload); // Перезавантажуємо браузер при зміні
+});
+
+// Задача за замовчуванням
+gulp.task('default', gulp.series(gulp.parallel('html', 'css', 'js', 'images'), 'serve'));
