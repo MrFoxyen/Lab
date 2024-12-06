@@ -1,0 +1,354 @@
+    /* Оновлений стиль */
+    body {
+        font-family: "Creato Display";
+        color: #333;
+        margin: 0;
+        padding: 0;
+        font-size: 20px; /* Збільшено розмір шрифту */
+    }
+        
+    .container {
+        width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        padding-bottom: 20px; /* Додає додатковий відступ внизу */
+        min-height: 100vh; /* Додає мінімальну висоту для подовження сторінки */
+    }
+    
+    
+            /* Make all section headings bold */
+            h1, h2, h3, h4 {
+                font-weight: bold;
+            }
+    
+            h3 {
+                color: #000;
+                font-size: 20px;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.2;
+                color: #555;
+            }
+            .highlight-orange {
+                color: #FF5722;
+            }
+            .bold {
+                font-weight: bold;
+            }
+    
+            .header {
+        background-color: #FF5722;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .header h1 {
+        font-size: 30px; /* Slightly larger */
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .header span {
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    
+    .contact-info {
+        display: flex;
+        justify-content: space-around;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+    
+    
+    .profile-section {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .profile-photo img {
+        width: 350px; /* Adjust to desired size */
+        height: 350px; /* Adjust to desired size */
+        border-radius: 0%;
+    }
+    
+    
+            .profile-content {
+                flex: 1;
+            }
+            .skills-slider {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .skill-item {
+        margin-bottom: 15px;
+    }
+    
+    .skill-label {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .slider {
+        width: 100%;
+        -webkit-appearance: none;
+        height: 5px;
+        background: #ddd;
+        border-radius: 5px;
+        outline: none;
+        position: relative;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        appearance: none;
+        width: 10px;
+        height: 30px;
+        background-color: #ff7251;
+        border-radius: 2px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .slider::before {
+        content: '';
+        height: 5px; /* Висота так само, як у .slider */
+        background-color: #FF5722;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%; /* Встановлює статичну ширину заповнення */
+        z-index: 0;
+    }
+    
+    .slider-1::before {
+        width: 80%; /* Adobe Photoshop */
+    }
+    
+    .slider-2::before {
+        width: 70%; /* Adobe Illustrator */
+    }
+    
+    .slider-3::before {
+        width: 90%; /* HTML & CSS */
+    }
+    
+    .slider-4::before {
+        width: 75%; /* Microsoft Word */
+    }
+    
+    .slider-5::before {
+        width: 56%; /* Microsoft PowerPoint */
+    }
+    
+    
+            /* Transparent Table for Languages and Hobbies */
+            .table-section {
+                display: table;
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 10px;
+                margin-bottom: 20px;
+            }
+            .table-section th, .table-section td {
+                background-color: transparent;
+                border: 2px solid #000;
+                color: #FF5722; /* Orange text for languages */
+                padding: 10px;
+                text-align: center;
+                font-size: 18px;
+                border-radius: 5px;
+            }
+    
+            /* Left and Right Columns */
+            .content {
+                display: flex;
+                gap: 20px;
+            }
+            .left-column, .right-column {
+                flex: 1;
+            }
+            
+    
+            .section-item {
+        margin-bottom: 15px; /* Додати відступ між блоками освіти */
+    }
+    
+    .year {
+        color: #ff5722; /* Помаранчевий колір для років */
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    .university {
+        font-weight: bold;
+        font-size: 18px;
+        color: #333;
+        margin-left: 10px; /* Відступ від року до назви університету */
+    }
+    
+    .degree {
+        font-size: 16px;
+        color: #555;
+        font-weight: bold;
+        margin: 5px 0; /* Відступ перед і після назви спеціальності */
+    }
+    
+    .description {
+        font-size: 14px;
+        color: #777;
+        margin: 0; /* Видалення додаткових відступів */
+    }
+    
+/* Reference Section */
+.references {
+    display: flex;
+    gap: 20px;
+}
+.reference-item {
+    flex: 1;
+    background-color: #425055;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Переконайтеся, що контейнер займає всю ширину */
+    color: #fff !important; /* Примусовий білий текст */
+}
+
+.reference-item * {
+    color: #fff !important; /* Примусовий білий текст */
+}
+
+.hobby-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.hobby-table td {
+    background-color: transparent;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 10px;
+    color: #000;
+    vertical-align: top; /* Забезпечує вирівнювання по верхній частині */
+    text-align: center; /* Вирівнює весь контент всередині клітинки */
+}
+
+.hobby-icon {
+    width: 50px; /* Розмір іконок */
+    height: 50px;
+    margin: 0 auto 10px auto; /* Центрування іконок і відступ знизу */
+    display: block; /* Забезпечує відображення як блоковий елемент */
+}
+
+.hobby-table span {
+    display: block; /* Вирівнює текст під іконкою */
+    margin-top: 5px;
+    font-size: 18px;
+    color: #555;
+    text-align: center; /* Центрування тексту */
+}
+
+
+            /* Orange Icons */
+            .section-icon {
+                color: #FF5722;
+            }
+            .divider {
+                width: 100%; /* Займає всю ширину контейнера */
+                height: 5px; /* Висота 5px */
+                background-color: rgb(255, 87, 34); /* Ваш колір */
+                margin: 10px 0; /* Відступи зверху та знизу */
+                display: block; /* Відображається як блок */
+            }
+         /* Стилізація для всіх іконок Bootstrap, крім конкретних іконок */
+.bi {
+    color: #FF5722; /* Оранжевий колір для всіх іконок */
+}
+
+/* Виключення для bi-globe-europe-africa та bi-map-fill */
+.bi.bi-globe-europe-africa,
+.bi.bi-map-fill {
+    color: inherit; /* Залишає стандартний колір */
+}
+
+/* Основний контейнер секції */
+.section {
+    border: 2px solid #f0f0f0e1; /* Світло-сірий бордер */
+    margin-bottom: 15px; /* Відступ між секціями */
+    border-radius: 5px; /* Згладжені кути */
+    overflow: hidden; /* Приховує вміст за межами блоку */
+    transition: all 0.3s ease-in-out; /* Плавний перехід при будь-яких змінах */
+}
+
+/* Заголовок секції */
+.section-header {
+    background-color: #f5f5f5; /* Помаранчевий фон */
+    color: #c6c6c6; /* Білий текст */
+    padding: 15px; /* Внутрішні відступи */
+    font-size: 20px; /* Розмір тексту */
+    cursor: pointer; /* Змінює курсор на "палець" при наведенні */
+    text-transform: uppercase; /* Усі букви у верхньому регістрі */
+    margin: 0; /* Відсутність зовнішніх відступів */
+    border-bottom: 1px solid #ddd; /* Нижня сіра лінія */
+}
+
+/* Вміст секції (прихований за замовчуванням) */
+.section-content {
+    max-height: 0; /* Початкова висота - 0, щоб приховати вміст */
+    overflow: hidden; /* Приховує текст, що виходить за межі блоку */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Плавні анімації для висоти та відступів */
+    padding: 0 15px; /* Бічні відступи */
+    font-size: 18px; /* Розмір тексту */
+    color: #555; /* Сірий текст */
+}
+
+/* Відступи та стилі для параграфів всередині секції */
+.section-content p {
+    margin: 10px 0; /* Відступ зверху і знизу */
+}
+
+/* Клас активної секції (для розкриття) */
+.section-content.active {
+    max-height: 200px; /* Висота блоку (змініть під ваш контент) */
+    padding: 15px; /* Відступи всередині блоку */
+}
+
+
+.section {
+    margin-bottom: 20px;  /* Відступи між секціями */
+}
+
+.section-header h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.section-content {
+    margin-top: 10px;
+}
+
+.right-column {
+    width: 48%; /* Зменшено з 50%, щоб уникнути перекриття */
+    float: right;
+    padding: 20px;
+}
+
+.left-column {
+    max-width: 48%; /* Аналогічно, щоб збалансувати структуру */
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}

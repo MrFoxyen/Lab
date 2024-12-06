@@ -1,0 +1,60 @@
+{
+  "profile": {
+    "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry."
+  },
+  "skills": [
+    { "name": "Adobe Photoshop", "level": 80 },
+    { "name": "Adobe Illustrator", "level": 70 },
+    { "name": "HTML & CSS", "level": 90 },
+    { "name": "Microsoft Word", "level": 56 },
+    { "name": "Microsoft PowerPoint", "level": 50 }
+  ],
+  "contact": {
+    "phone": "+1 607-288-3649",
+    "email": "yourname@email.com" ,
+    "website": "www.yourwebsite.com",
+    "address": "123 Elm Street, Manchester, NH"
+  },
+  "education": [
+    {
+      "year": "2017-2019",
+      "university": "Stanford University",
+      "degree": "Master Degree in Graphic Design",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+      "year": "2011-2015",
+      "university": "University of Chicago",
+      "degree": "Bachelor Degree in Graphic Design",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+  ],
+  "languages": ["English", "Spanish", "French"],
+  "hobbies": ["Traveling", "Gaming", "Music", "Gyming"],
+  "job": [
+    {
+      "year": "2016-2020",
+      "company": "Creative Agency",
+      "position": "Graphic Designer",
+      "description": "Worked on various design projects, including branding, marketing materials, and digital media content."
+    },
+    {
+      "year": "2020-Present",
+      "company": "Self-employed",
+      "position": "Freelance Designer",
+      "description": "Specialized in web and graphic design for diverse clients, ensuring high-quality and creative solutions."
+    }
+  ],
+  "reference": [
+    {
+      "name": "Jane Doe",
+      "position": "Senior Manager at Creative Agency",
+      "email": "jane.doe@example.com"
+    },
+    {
+      "name": "John Smith",
+      "position": "Freelance Client",
+      "email": "john.smith@example.com"
+    }
+  ]
+}
